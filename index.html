@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="app">
+            <h1>
+                몬티홀 딜레마 시뮬레이터
+            </h1>
+
+            <div class="doors">
+                <div class="door" id="d1">
+                    문
+                </div>
+                <div class="door" id="d2">
+                    문
+                </div>
+                <div class="door" id="d3">
+                    문
+                </div>
+            </div>
+
+            <div class="button">
+                <button id="SB">
+                    바꾸기
+                </button>
+
+                <button id="RB">
+                    재시도
+                </button>
+            </div>
+
+            <div class="stats">
+                <div id="playCountText">시도 횟수 : 0회</div>
+                <div id="winRateText">당첨 확률 : 0%</div>
+            </div>
+            <div class="repeatB">
+                <button id="repeat10">1️⃣0️⃣회 반복</button>
+                <button id="repeat100">1️⃣0️⃣0️⃣회 반복</button>
+                <button id="repeat1000">1️⃣0️⃣0️⃣0️⃣회 반복</button>
+                <input type="number" id="customrepeat" min="1" placeholder="횟수 입력">
+                <button id="repeatC">반복</button>
+            </div>
+            <label>
+                <input type="checkbox" id="animaToggle" checked>
+                애니메이션 on
+            </label>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
