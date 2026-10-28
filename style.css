@@ -89,3 +89,25 @@ button {
     gap: 12px;
     flex-wrap: wrap;
 }
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #dddddd;
+    margin: 20px 0;
+}
+
+.explanation {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.explanation h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.explanation p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
