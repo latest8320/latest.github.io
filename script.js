@@ -145,21 +145,21 @@ RB.style.display = "none"
 repeat10.addEventListener(
     "click",
     () => {
-        runAnimatedSimulation(10);
+        runSelectedSimulation(10);
     }
 );
 
 repeat100.addEventListener(
     "click",
     () => {
-        runAnimatedSimulation(100);
+        runSelectedSimulation(100);
     }
 );
 
 repeat1000.addEventListener(
     "click",
     () => {
-        runAnimatedSimulation(1000);
+        runSelectedSimulation(1000);
     }
 );
 
@@ -310,5 +310,13 @@ async function runAnimatedSimulation(times) {
         const winRate = ((winCount / playCount)*100).toFixed(1);
         PlayCountText.textContent = "시도 횟수 : " + playCount + "회";
         winRateText.textContent = "당첨 확률 : " + winRate + "%";
+    }
+}
+
+function runSelectedSimulation(times) {
+    if (animaToggle.checked) {
+        runAnimatedSimulation(times);
+    } else {
+        runSimulation(times);
     }
 }
